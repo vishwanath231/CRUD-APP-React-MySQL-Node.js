@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sen', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 1.5rem auto 2rem auto;
+  padding: 0 15px;
+}
+
+header {
+  text-align: center;
+}
+
+header>p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 2em;
+}
+
+@media(min-width:1020px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 350px auto;
+  }
+}
+
+
+.form__container {
+  width: 100%;
+}
+
+
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.form__div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form__div label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.form__div input {
+  border: 1px solid #d4d4d4;
+  outline: none;
+  padding: 1rem;
+  font-size: .9rem;
+  font-weight: 500;
+  font-family: 'Sen', sans-serif;
+  border-radius: 3px;
+}
+
+.form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: .8rem;
+  font-weight: 600;
+  font-family: 'Sen',
+    sans-serif;
+  border-radius: 3px;
+  background: cornflowerblue;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.retrunRegister {
+  padding: 1rem;
+  font-size: .8rem;
+  font-weight: 600;
+  border-radius: 3px;
+  background: coral;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+
+
+
+
+
+.record__container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-of-type(even) {
+  background: rgb(240, 240, 240);
+}
+
+th {
+  background: lightcoral;
+  color: white;
+}
+
+td,
+th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+td a {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.fa-trash-alt {
+  color: crimson;
+}
+
+.fa-pencil-alt {
+  color: rgb(61, 61, 218);
+}
+
+
+@media (max-width: 760px) {
+  table {
+    width: 100%;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  tbody tr {
+    margin-bottom: .9rem;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+
+  td,
+  th {
+    text-align: left;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 35%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 70px;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-column);
+    color: rgb(94, 94, 94);
+  }
+}
+
+td button{
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.updateIcon,
+.deleteIcon {
+  font-size: 1rem;
+}
+
+.updateIcon {
+  color: cornflowerblue;
+}
+
+.deleteIcon {
+  color: crimson;
+}
